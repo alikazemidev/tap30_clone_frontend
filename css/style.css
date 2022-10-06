@@ -305,3 +305,45 @@ section.block-plan {
   }
 }
 /* Feature Style */
+
+/* Contact-us style */
+.contact-us {
+  display: grid;
+}
+.form {
+  order: 3;
+}
+.address {
+  order: 2;
+}
+.icon {
+  order: 1;
+}
+.map {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-us {
+    grid-template-areas:
+      "address form"
+      "map form"
+      "icons form";
+    grid-template-columns: 70fr 30fr;
+  }
+  .contact-us__form {
+    grid-area: form;
+  }
+  .contact-us__address {
+    grid-area: address;
+  }
+  .contact-us__icon {
+    grid-area: icons;
+  }
+  .contact-us__map   {
+    grid-area: map;
+    display: block;
+  }
+}
+
+/* Contact-us style */
