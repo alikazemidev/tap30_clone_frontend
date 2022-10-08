@@ -340,7 +340,7 @@ section.block-plan {
   .contact-us__icon {
     grid-area: icons;
   }
-  .contact-us__map   {
+  .contact-us__map {
     grid-area: map;
     display: block;
   }
